@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './styles.css';
+import {Provider} from 'react-redux';
+import store from './store';
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
-}
+import 'styles.css';
+import Review from './containers/Review';
 
-const rootElement = document.getElementById('root');
-ReactDOM.render(<App />, rootElement);
+
+ReactDOM.render(<Provider store={store}>
+  <Review/>
+</Provider>, document.getElementById('root'));
+
