@@ -2,3 +2,17 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.static-review-item{
+  display: flex;
+}
+
+.static-review-item-fields{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+.static-review-item-actions{
+  display: flex;
+  flex-direction: row-reverse;
+}
