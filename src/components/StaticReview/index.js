@@ -1,25 +1,21 @@
 import React from 'react';
 
 const StaticReview = (props) => {
-  return <div className="ui card">
+  return <div className="ui fluid card">
     <div className="static-review-item">
-      <img width='30' height='30' srcSet={`${props.avatar}`}></img>
+      <img className="review-avatar" srcSet={`${props.avatar}`}></img>
       <div className="static-review-item-fields">
-        <div>{props.uName}</div>
-        <div>{props.rText}</div>
+        <div className="review-name">{props.uName}</div>
+        <div className="review-text">{props.rText}</div>
       </div>
       <div className="static-review-item-actions">
-      <span className="ui label" onClick={() => {
-        props.reviewDelete(props.rId);
-      }}>
-      <i className="trash alternate icon"></i>
-      </span>
+        <i className="trash alternate icon" onClick={() => {
+          props.reviewDelete(props.rId);
+        }}/>
 
-        <span className="ui label" onClick={() => {
+        <i className="pencil alternate icon" onClick={() => {
           props.reviewEdit(props.rId);
-        }}>
-      <i className="pencil alternate icon"></i>
-      </span>
+        }}/>
       </div>
     </div>
   </div>

@@ -67,8 +67,8 @@ class Review extends React.Component {
       }
     });
 
-    return <div className="ui form">
-      <h2 className="ui header">User Reviews</h2>
+    return <div className="ui form form-review">
+      <h2 className="form-review-header">User Reviews</h2>
       {items}
       {!this.state.editMode ? <DynamicReview type={constants.NEW} setReview={this.setReview}/> : null}
     </div>

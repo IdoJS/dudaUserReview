@@ -1,18 +1,65 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+body {
+    max-width: 640px;
 }
 
-.static-review-item{
-  display: flex;
+#root {
+    display: flex;
 }
 
-.static-review-item-fields{
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 auto;
+.form-review {
+    padding: 40px;
+    margin: 0 auto;
+    width: 80%;
+    max-height: 60%;
+    overflow-y: hidden;
 }
-.static-review-item-actions{
-  display: flex;
-  flex-direction: row-reverse;
+
+.form-review-header {
+    color: #2CB2FF;
+}
+
+.static-review-item {
+    display: flex;
+    padding: 10px;
+}
+
+.static-review-item-fields {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 0 5px;
+}
+
+.static-review-item-actions {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -5px;
+}
+
+.review-avatar {
+    width: 20%;
+    height: 20%;
+}
+
+.review-name {
+    font-size: 16px;
+}
+.review-text {
+    color: #D3D3D3;
+    font-size: 12px;
+}
+
+.dynamic-review-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 150px;
+}
+
+.review-input-name{
+}
+
+.review-input-text{
+    max-height: 80px;
+    resize: none;
 }
